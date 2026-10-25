@@ -23,13 +23,15 @@
 2. Check the project generator installed in the previous class:
 
    ```bash
-   projgen --help
+   projectgen --help
    ```
 
-3. Use `projgen` to create a project with:
-   - Project name: `raster_tools`
-   - Package name: `raster_tools`
-   - Layout: `src`
+3. Use `projectgen` to create a project with:
+   - project name: `raster_tools`
+   - layout: `src`
+   - folders: `data/, notebooks/`
+   - install NumPy, Matplotlib, and IPython using `projectgen` or manually with `pip`
+
 4. Enter the project directory:
 
    ```bash
@@ -42,6 +44,8 @@
    raster_tools/
    ├── pyproject.toml
    ├── env/
+   ├── data/
+   ├── notebooks/
    └── src/
        └── raster_tools/
            └── __init__.py
@@ -92,7 +96,7 @@
 
 # 4. Prepare the virtual environment
 
-1. Use the `env/` environment already created by `projgen`.
+1. Use the `env/` environment already created by `projectgen`.
 2. Activate it:
    - **Linux / macOS:**
 
@@ -103,7 +107,7 @@
    - **Windows (PowerShell):**
 
      ```powershell
-     env\Scripts\Activate.ps1
+     env\Scripts\activate
      ```
 
 3. Install the libraries:
@@ -170,7 +174,7 @@ See [pip: Local project installs](https://pip.pypa.io/en/stable/topics/local-pro
 
 # 7. Final check
 
-- [ ] Project generated with `projgen` and `src` layout.
+- [ ] Project generated with `projectgen` and `src` layout.
 - [ ] `src/raster_tools/raster_tools.py` contains two function placeholders.
 - [ ] Generated `__init__.py` remains empty.
 - [ ] No CLI entry point in `pyproject.toml`.
