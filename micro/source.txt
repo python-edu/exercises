@@ -1,0 +1,25 @@
+FIELD NOTES - FOREST PATH
+Date: 2026-09-18
+
+Overview
+The team followed a narrow forest path.
+The first observation was near a wooden bridge.
+The second observation was beside a small lake.
+
+Stations
+Station A: pending
+Station B: pending
+Station C: pending
+
+Tasks
+TODO: Check the bridge.
+TODO: Record land cover.
+TODO: Review field notes.
+
+Draft
+REMOVE: Temporary comment.
+REMOVE: Outdated observation.
+
+Summary
+The notes are ready for review.
+End of notes.

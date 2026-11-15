@@ -1,0 +1,36 @@
+         35691 function calls in 3.334 seconds
+
+   Ordered by: cumulative time
+   List reduced from 162 to 30 due to restriction <30>
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        1    0.000    0.000    3.334    3.334 {built-in method builtins.exec}
+        1    0.000    0.000    3.334    3.334 <string>:1(<module>)
+        1    0.000    0.000    3.334    3.334 repos.py:61(scan_fd)
+       66    0.001    0.000    3.314    0.050 subprocess.py:512(run)
+       66    0.000    0.000    3.276    0.050 subprocess.py:1178(communicate)
+       66    0.003    0.000    3.276    0.050 subprocess.py:2075(_communicate)
+      185    0.001    0.000    3.265    0.018 selectors.py:385(select)
+      185    3.263    0.018    3.263    0.018 {method 'poll' of 'select.poll' objects}
+       65    0.001    0.000    0.139    0.002 repos.py:31(is_repository)
+       65    0.001    0.000    0.124    0.002 repos.py:14(git_command)
+       66    0.002    0.000    0.037    0.001 subprocess.py:817(__init__)
+       66    0.002    0.000    0.031    0.000 subprocess.py:1808(_execute_child)
+       65    0.019    0.000    0.019    0.000 {built-in method _posixsubprocess.fork_exec}
+      130    0.000    0.000    0.011    0.000 _local.py:666(resolve)
+      130    0.002    0.000    0.009    0.000 <frozen posixpath>:388(realpath)
+      327    0.001    0.000    0.005    0.000 _local.py:227(__str__)
+      391    0.001    0.000    0.004    0.000 _local.py:289(drive)
+     2409    0.001    0.000    0.004    0.000 {built-in method posix.fspath}
+      130    0.000    0.000    0.003    0.000 _local.py:166(__fspath__)
+      585    0.001    0.000    0.003    0.000 subprocess.py:1897(<genexpr>)
+      681    0.003    0.000    0.003    0.000 {built-in method posix.lstat}
+      392    0.002    0.000    0.003    0.000 _local.py:257(_parse_path)
+      522    0.001    0.000    0.003    0.000 _local.py:500(__init__)
+       65    0.000    0.000    0.002    0.000 _local.py:193(__eq__)
+      130    0.000    0.000    0.002    0.000 _local.py:174(_str_normcase)
+       66    0.001    0.000    0.002    0.000 subprocess.py:1298(_close_pipe_fds)
+       65    0.001    0.000    0.002    0.000 <frozen os>:657(get_exec_path)
+       65    0.000    0.000    0.002    0.000 _abc.py:739(cwd)
+      261    0.000    0.000    0.002    0.000 _abc.py:130(with_segments)
+       66    0.000    0.000    0.002    0.000 subprocess.py:1704(_get_handles)

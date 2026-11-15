@@ -1,0 +1,21 @@
+[build-system]                        # backend for python build
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+
+
+[project]
+name = "git_repos"       # required
+version = "1.0.0"                     # required
+
+authors = [
+  { name = "Piotr Kramarczyk", email = "unknown@example.com" },
+]
+
+dependencies = [                      # required
+
+]
+
+
+[project.scripts]
+gitrepos = "git_repos.main:main"          # after installing `cli-name` can run script
