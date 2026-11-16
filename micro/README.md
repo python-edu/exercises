@@ -1,12 +1,71 @@
-# 02 — Editing text with micro
+# Editing text with micro
 
-**Goal:** create and save a text file; move through a document; select, replace, and delete text; edit repeated words.
+  >- **Goal:** create and save a text file; move through a document; select, replace, and delete text; edit repeated words.
+  >- Systems:Windows, Linux, macOS.
+  >- **Required:** the `micro` editor.
 
-**Systems:** Windows, Linux, macOS. **Required:** the `micro` editor. No Python is needed.
+  >- We will use the `shell-practice` directory created during the previous exercise.
+  >- All files created or edited during this exercise will remain in `shell-practice`.
 
-Open a terminal in the `exercises/02_micro` directory of this repository. Check that it contains `README.md` and `source.txt` with `ls`.
+---
 
-## 1. Create and save a file
+
+# Prepare the working directory 
+
+>- Open your terminal and check whether `shell-practice` exists in your home directory:
+
+```sh
+ls 
+```
+
+If `shell-practice` does not exist, create it:
+
+```sh
+mkdir ~/shell-practice
+```
+
+---
+
+
+# Download `source.txt` file
+
+The repository contains a practice file, `source.txt`, with sample text.
+
+1. Open `source.txt` on GitHub.
+2. Click **Download raw file** to download it.
+3. Open your terminal.
+
+Check that the file was downloaded to your `Downloads` directory:
+
+```sh
+ls ~/Downloads
+```
+
+Move the file to the `shell-practice` directory created during the previous exercise:
+
+```sh
+mv ~/Downloads/source.txt ~/shell-practice/
+```
+
+Go to the working directory:
+
+```sh
+cd ~/shell-practice
+
+# Check that source.txt is available.
+ls
+```
+
+Open the file in micro:
+
+```sh
+micro source.txt
+```
+
+---
+
+
+# 1. Create and save a file
 
 The command `micro notes.txt` opens the text editor. Because `notes.txt` is a new filename, you start with an empty document. The file is written to disk when you save it.
 
@@ -30,7 +89,10 @@ Press **Ctrl+S** to save, then **Ctrl+Q** to close micro.
 cat notes.txt
 ```
 
-## 2. Open a document and save it under another name
+---
+
+
+# 2. Open a document and save it under another name
 
 The repository includes `source.txt`, an original practice text available under CC0 1.0. Open it:
 
@@ -38,15 +100,24 @@ The repository includes `source.txt`, an original practice text available under 
 micro source.txt
 ```
 
-Read the text without changing it. Now save your **working copy**:
 
-1. Press **Ctrl+E** to open micro's command bar.
+### Save the file as `work.txt` - using the command bar
+
+1. Press **Ctrl+E** to open the command bar at the bottom of micro.
 2. Type `save work.txt` and press **Enter**.
-3. Check the filename shown at the bottom of micro: it should be `work.txt`.
 
-You will edit `work.txt`. The original `source.txt` remains unchanged. Use **Ctrl+S** to save later changes.
 
-## 3. Move the cursor
+### Save the file as `work.txt` - using a keyboard shortcut (if configured earlier)
+
+1. Press **Alt+S** to open the **Save As** prompt.
+2. Type `work.txt` in the `Filename:` field and press **Enter**.
+
+Both methods save the document as `work.txt`.
+
+---
+
+
+# 3. Move the cursor
 
 **Ctrl+L** opens a prompt for a line number. Enter `6` and press **Enter**. You should reach:
 
@@ -69,7 +140,10 @@ Now try a **relative jump**. Starting on line 6:
 
 Use **Ctrl+L** again to jump to line `15`, then return to line `6`.
 
-## 4. Select and replace text
+---
+
+
+# 4. Select and replace text
 
 On line 6, replace `wooden` with `stone`:
 
@@ -79,7 +153,10 @@ On line 6, replace `wooden` with `stone`:
 
 The line should now contain `stone bridge`.
 
-## 5. Remove several lines
+---
+
+
+# 5. Remove several lines
 
 The `Draft` section contains two outdated lines. Remove both, but leave the `Draft` heading:
 
@@ -92,7 +169,10 @@ The `Draft` heading remains, and the two `REMOVE` lines disappear.
 
 **Ctrl+C** copies a selection; **Ctrl+V** pastes. Press **Ctrl+Z** to undo the removal if you need to retry.
 
-## 6. Change repeated words at once
+---
+
+
+# 6. Change repeated words at once
 
 The `Tasks` section contains three lines beginning with `TODO`.
 
@@ -103,7 +183,10 @@ The `Tasks` section contains three lines beginning with `TODO`.
 
 If the terminal intercepts Alt combinations, complete the replacements one at a time with normal selection. Multi-cursor editing is an additional technique, not a prerequisite for saving your work.
 
-## 7. Save and check
+---
+
+
+# 7. Save and check
 
 Press **Ctrl+S** and then **Ctrl+Q**.
 
