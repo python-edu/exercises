@@ -10,11 +10,26 @@ Stations
 Station A: pending
 Station B: pending
 Station C: pending
+Station X: remove
+
+Measurements
+Bridge width: (3 m)
+Lake depth: [2 m]
+Weather: "cloudy"
+Unused value: {temporary}
+
+Quality
+Quality flag: obsolete
+
+Checklist
+Inspect the bridge.
+Record land cover.
+Check station coordinates.
 
 Tasks
-TODO: Inspect the bridge.
+TODO: Check the bridge.
 TODO: Record land cover.
-TODO: Check station coordinates.
+TODO: Review the map.
 
 Draft
 REMOVE: Temporary comment.
@@ -22,3 +37,4 @@ REMOVE: Outdated observation.
 
 Summary
 The notes are ready for review.
+Field coordinator: team lead.
