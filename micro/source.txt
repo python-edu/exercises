@@ -12,9 +12,9 @@ Station B: pending
 Station C: pending
 
 Tasks
-TODO: Check the bridge.
+TODO: Inspect the bridge.
 TODO: Record land cover.
-TODO: Review field notes.
+TODO: Check station coordinates.
 
 Draft
 REMOVE: Temporary comment.
@@ -22,4 +22,3 @@ REMOVE: Outdated observation.
 
 Summary
 The notes are ready for review.
-End of notes.
